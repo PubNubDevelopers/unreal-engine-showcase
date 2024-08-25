@@ -73,6 +73,7 @@ public class LyraGame : ModuleRules
 				"AudioModulation",
 				"EngineSettings",
 				"DTLSHandlerComponent",
+                "PubnubLibrary"
 			}
 		);
 
