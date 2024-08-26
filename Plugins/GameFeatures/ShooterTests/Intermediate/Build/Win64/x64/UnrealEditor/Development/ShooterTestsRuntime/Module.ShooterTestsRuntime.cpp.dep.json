@@ -1,0 +1,35 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\oliver.carson\\documents\\github\\unreal-engine-showcase\\plugins\\gamefeatures\\shootertests\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\shootertestsruntime\\module.shootertestsruntime.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\oliver.carson\\documents\\github\\unreal-engine-showcase\\intermediate\\build\\win64\\x64\\lyraeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\oliver.carson\\documents\\github\\unreal-engine-showcase\\plugins\\gamefeatures\\shootertests\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\shootertestsruntime\\definitions.shootertestsruntime.h",
+            "c:\\users\\oliver.carson\\documents\\github\\unreal-engine-showcase\\plugins\\gamefeatures\\shootertests\\intermediate\\build\\win64\\unrealeditor\\inc\\shootertestsruntime\\uht\\shootertestsdevicepropertytester.gen.cpp",
+            "c:\\users\\oliver.carson\\documents\\github\\unreal-engine-showcase\\plugins\\gamefeatures\\shootertests\\source\\shootertestsruntime\\private\\shootertestsdevicepropertytester.h",
+            "c:\\users\\oliver.carson\\documents\\github\\unreal-engine-showcase\\plugins\\gamefeatures\\shootertests\\intermediate\\build\\win64\\unrealeditor\\inc\\shootertestsruntime\\uht\\shootertestsdevicepropertytester.generated.h",
+            "c:\\users\\oliver.carson\\documents\\github\\unreal-engine-showcase\\plugins\\gamefeatures\\shootertests\\intermediate\\build\\win64\\unrealeditor\\inc\\shootertestsruntime\\uht\\shootertestsruntime.init.gen.cpp",
+            "c:\\users\\oliver.carson\\documents\\github\\unreal-engine-showcase\\plugins\\gamefeatures\\shootertests\\source\\shootertestsruntime\\private\\shootertestsdevicepropertytester.cpp",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\inputdevicesubsystem.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\inputsettings.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\playerinput.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\public\\gesturerecognizer.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\public\\keystate.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\playerinput.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\developersettings\\public\\engine\\platformsettings.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\developersettings\\public\\engine\\platformsettingsmanager.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\developersettings\\uht\\platformsettingsmanager.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\developersettings\\uht\\platformsettings.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\inputsettings.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\inputdevicesubsystem.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\capsulecomponent.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\capsulecomponent.generated.h",
+            "c:\\users\\oliver.carson\\documents\\github\\unreal-engine-showcase\\plugins\\gamefeatures\\shootertests\\source\\shootertestsruntime\\private\\shootertestsruntimemodule.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
