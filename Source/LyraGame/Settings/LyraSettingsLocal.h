@@ -507,6 +507,19 @@ private:
 	UPROPERTY(Config)
 	int32 NumberOfReplaysToKeep = 5;
 
+	// Obusive Chat Filter
+public:
+
+	UFUNCTION()
+	bool ShouldEnableFilterAbusiveLanguage() const { return bShouldEnableAbusiveLanguageFilter; }
+	UFUNCTION()
+	void SetShouldEnableFilterAbusiveLanguage(bool bEnabled) { bShouldEnableAbusiveLanguageFilter = bEnabled;}
+
+private:
+
+	UPROPERTY(Config)
+	bool bShouldEnableAbusiveLanguageFilter = false;
+
 private:
 	void OnAppActivationStateChanged(bool bIsActive);
 	void ReapplyThingsDueToPossibleDeviceProfileChange();
