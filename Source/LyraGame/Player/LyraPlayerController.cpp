@@ -208,6 +208,19 @@ bool ALyraPlayerController::ShouldRecordClientReplay()
 	return false;
 }
 
+bool ALyraPlayerController::EnabledProfanitySetting()
+{
+	// check the settings
+	if (const ULyraLocalPlayer* LyraLocalPlayer = Cast<ULyraLocalPlayer>(GetLocalPlayer()))
+	{
+		if (LyraLocalPlayer->GetLocalSettings()->ShouldEnableFilterAbusiveLanguage())
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
 void ALyraPlayerController::OnPlayerStateChangedTeam(UObject* TeamAgent, int32 OldTeam, int32 NewTeam)
 {
 	ConditionalBroadcastTeamChanged(this, IntegerToGenericTeamId(OldTeam), IntegerToGenericTeamId(NewTeam));

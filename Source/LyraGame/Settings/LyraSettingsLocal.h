@@ -507,7 +507,7 @@ private:
 	UPROPERTY(Config)
 	int32 NumberOfReplaysToKeep = 5;
 
-	// Obusive Chat Filter
+	// Abusive Chat Filter
 public:
 
 	UFUNCTION()
