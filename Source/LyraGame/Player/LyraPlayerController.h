@@ -52,6 +52,10 @@ public:
 	// Call to see if we should record a replay, subclasses could change this
 	virtual bool ShouldRecordClientReplay();
 
+	// Determine if the user has checked the Enable Abusive Language Filter Setting
+	UFUNCTION(BlueprintCallable, Category = "Lyra|PlayerController")
+	bool EnabledProfanitySetting();
+
 	// Run a cheat command on the server.
 	UFUNCTION(Reliable, Server, WithValidation)
 	void ServerCheat(const FString& Msg);

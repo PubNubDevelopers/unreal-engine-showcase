@@ -96,6 +96,29 @@ UGameSettingCollection* ULyraGameSettingRegistry::InitializeGameplaySettings(ULy
 		//----------------------------------------------------------------------------------
 	}
 
+	{
+		UGameSettingCollection* TextChatSubsection = NewObject<UGameSettingCollection>();
+		TextChatSubsection->SetDevName(TEXT("TextChatOptions"));
+		TextChatSubsection->SetDisplayName(LOCTEXT("TextChatOptions_Name", "Chat"));
+		Screen->AddSetting(TextChatSubsection);
+
+		//----------------------------------------------------------------------------------
+		{
+			UGameSettingValueDiscreteDynamic_Bool* Setting = NewObject<UGameSettingValueDiscreteDynamic_Bool>();
+			Setting->SetDevName(TEXT("FilterAbusiveLanguage"));
+			Setting->SetDisplayName(LOCTEXT("FilterAbusiveLanguageSetting_Name", "Filter Abusive Language"));
+			Setting->SetDescriptionRichText(LOCTEXT("FilterAbusiveLanguageSetting_Description", "Enable this option to automatically filter out offensive, abusive, or inappropriate language from in-game chat."));
+
+			Setting->SetDynamicGetter(GET_LOCAL_SETTINGS_FUNCTION_PATH(ShouldEnableFilterAbusiveLanguage));
+			Setting->SetDynamicSetter(GET_LOCAL_SETTINGS_FUNCTION_PATH(SetShouldEnableFilterAbusiveLanguage));
+			Setting->SetDefaultValue(GetDefault<ULyraSettingsLocal>()->ShouldEnableFilterAbusiveLanguage());
+
+			Setting->AddEditCondition(FWhenPlayingAsPrimaryPlayer::Get());
+			TextChatSubsection->AddSetting(Setting);
+
+		}
+	}
+
 	return Screen;
 }
 
