@@ -42,7 +42,9 @@ public class LyraGame : ModuleRules
 				"Niagara",
 				"AsyncMixin",
 				"ControlFlows",
-				"PropertyPath"
+				"PropertyPath",
+				"Json", 
+				"JsonUtilities"
 			}
 		);
 
