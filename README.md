@@ -60,7 +60,8 @@ You'll need to perform the following before getting started. Make sure you follo
 5. Do the same for Message Persistence, which allows messages to be stored on the PubNub platform. Select a duration of how long you would like to retain messages.
 6. Enable Stream Controller.
 7. Click on save changes.
-8. Save the Pub/Sub Keys
+8. Save the Pub/Sub Keys.
+9. Create a [Function](https://www.pubnub.com/docs/serverless/functions/overview) that utilizes [AWS Translate](https://www.pubnub.com/integrations/amazon-translate/) and [Tisane's](https://www.pubnub.com/integrations/tisane-labs-nlp/) Profanity API to translate languages and mask profane messages, respectively. Create a Before Publish fire, and moderate on the channel `moderation.*`.
 
 ### Add the Keys to the Chat SDK initialization
 1. Navigate to `All/Content/B_LyraGameInstace`.
