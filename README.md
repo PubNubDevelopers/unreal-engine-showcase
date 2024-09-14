@@ -1,8 +1,10 @@
 PubNub's Enhanced Lyra Game with In-Game Chat, Online Presence, and More!
 ====================================
 Welcome to PubNub's Lyra Game Enhanced with our Unreal Chat and Unreal SDKs!
-
+![Lyra Game enhanced with PubNub's Unreal Chat SDK](./Media/Lyra-FrontEnd-1.png)
 This is an Unreal Engine game built using the [Lyra](https://dev.epicgames.com/community/learning/paths/Z4/lyra-starter-game) game, an over-the-shoulder shooting game built alongside UE 5 development to serve as an excellent starting point for new games and understanding the engine.
+
+![Lyra Game with real-time features like history, presence, and history](./Media/lyra-frontend-2.png)
 
 PubNub has enhanced this functionality by integrating real-time features utilizing our new [Unreal Chat SDK](https://www.pubnub.com/docs/chat/unreal-chat-sdk/overview) to easily power the chat in the main menu of the game with features such as:
 * In-Game Messaging: Send and receive messages in the main menu by a central chat object that easily maintains different chats.
@@ -26,8 +28,11 @@ While players are playing the game (in the level L_Expanse), our [Unreal SDK](ht
 
 * In-Game Messaging: Send and receive messages while playing the game.
 * Channels: Communicate with different players through whisper (private), group, and all (public) chat.
+* Moderation: Live language translation and profanity filtering based on user settings to translate and mask profane messages in real time.
 * Presence: Detect when users are online/offline
 * Blueprint Compatible: The Unreal SDK is Blueprint compatable, and the entire chat example was built using Blueprints.
+
+![Elimination game mode enhanced with PubNub Unreal SDK](./Media/lyra-ingame-1.png)
 
 While this README is focused on the PubNub functionality added to the game, please review the [learning path](https://dev.epicgames.com/community/learning/paths/Z4/lyra-starter-game) from Epic Games to understand the base game itself.
 
@@ -39,7 +44,7 @@ Note:
 ## Prerequisites
 You'll need to perform the following before getting started. Make sure you follow the [Unreal Chat SDK](https://www.pubnub.com/docs/chat/unreal-chat-sdk/overview) and the [Unreal SDK](https://www.pubnub.com/docs/sdks/unreal) for specific details or updated changes to installation instructions.
 
-### Set up Project Enviornment
+### Set up Project Environment
 1. Download Unreal Engine 5.0 and higher. This project was built wiht 5.4.4.
 2. Clone the content of the [Unreal Chat SDK repository](https://github.com/pubnub/unreal-engine-chat) and [Unreal SDK repository](https://github.com/pubnub/unreal-engine) into the Plugins folder. Change the sdk folder names to PubnubChatSDK and Pubnub respectively.
 3. Generate C++ project files (as we need to add the SDK to the build file) by rick clicking on your `.uproject` file.
@@ -126,7 +131,7 @@ In the [Admin Portal](https://admin.pubnub.com/), there is a Debug Console that 
 - The channel architecture necessary to subscribe and receive messages as follows in the L_Exapnse level, aka the Elimination mode of the game powered by the Unreal SDK:
     - group: `group.<groupname>`
     - whisper: `whisper.<gameUUID>-<AdminPortalUUID>`. Since the debug console can't handle logic to understand if the whisper contains that message, you need to always format the channels in this order in the debug console. For the sake of this demo, the UUID is always set to be `pubnub-3920`.
-- Due to the architecture of the Unreal SDK and how the Debug Console sends messages, you need to format the message in JSON format in the Debug Console with the `text` and `publisher` fields. An example: {"text":"hi there!","publisher":"amy"}
+- Due to the architecture of the Unreal SDK and how the Debug Console sends messages, you need to format the message in JSON format in the Debug Console with the `text` and `publisher` fields. An example, for language translation `{"text":"Hallo Oliver, wie geht es?","publisher":"jack","sourceLanguage":"de","targetLanguage":"","runProfanity":"false","originalPublisher":"jack","originalChannel":"all"}` or for profane messages: `{"text":"Fuck off Oliver","publisher":"jack","sourceLanguage":"en","targetLanguage":"","runProfanity":"false","originalPublisher":"jack","originalChannel":"all"}`
 
 ## Links
 - PubNub Unreal Chat SDK: https://www.pubnub.com/docs/chat/unreal-chat-sdk/overview
