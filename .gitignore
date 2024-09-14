@@ -76,3 +76,4 @@ DerivedDataCache/*
 # PubNub SDK Plugins
 Plugins/Pubnub
 Plugins/PubNub
+Plugins/PubnubChatSDK
