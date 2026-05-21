@@ -1,0 +1,6 @@
+[submodule "Plugins/Pubnub"]
+	path = Plugins/Pubnub
+	url = https://github.com/pubnub/unreal-engine
+[submodule "Plugins/PubnubChat"]
+	path = Plugins/PubnubChat
+	url = https://github.com/pubnub/unreal-engine-chat
